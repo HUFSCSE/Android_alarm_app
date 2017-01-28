@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_child"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.gudrbscse.khkalarm4.ChildActivity">
+
+    <TextView
+        android:text="Update"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_child_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date Select" />
+
+    <Button
+        android:id="@+id/btn_child_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time Select" />
+    <TextView
+        android:id="@+id/tv_update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_update_note"
+        android:textSize="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+    <Button
+        android:id="@+id/btn_go_maps"
+        android:text="Map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goToMaps"/>
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alarm Update"
+        android:onClick="updateToKhkDateList"/>
+
+</LinearLayout>
